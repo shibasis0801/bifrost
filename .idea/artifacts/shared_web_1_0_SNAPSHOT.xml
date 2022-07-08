@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="shared-web-1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/shared/build/libs</output-path>
+    <root id="archive" name="shared-web-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="batcave.shared.webMain" />
+    </root>
+  </artifact>
+</component>

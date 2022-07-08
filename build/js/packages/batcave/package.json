@@ -1,0 +1,18 @@
+{
+  "name": "batcave",
+  "version": "1.0.0-SNAPSHOT",
+  "main": "kotlin/batcave.js",
+  "devDependencies": {
+    "copy-webpack-plugin": "11.0.0",
+    "webpack": "5.69.1",
+    "webpack-cli": "4.9.2",
+    "format-util": "1.0.5",
+    "source-map-loader": "3.0.1",
+    "webpack-dev-server": "4.7.4",
+    "dukat": "0.5.8-rc.4"
+  },
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}
