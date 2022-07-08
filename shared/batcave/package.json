@@ -1,0 +1,11 @@
+{
+  "name": "batcave",
+  "version": "1.0.0-SNAPSHOT",
+  "main": "batcave.js",
+  "types": "batcave.d.ts",
+  "devDependencies": {},
+  "dependencies": {},
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

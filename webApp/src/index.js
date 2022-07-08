@@ -4,19 +4,27 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+import _batcave from "batcave";
+const batcave = _batcave.shared.me.user.shared
 
-// Note: Using an Alias in Webpack
-import App from 'components/App/';
-
-// Note: Using an Alias in Webpack
-import 'styles/index.scss';
+function App() {
+console.log(_batcave)
+    return (
+        <div>
+            {batcave.helloWorld("React from Kotlin")}
+            <br />
+            <br />
+            {new batcave.Greeting().greeting()}
+            <br />
+            <br />
+            {(new batcave.Test("Shibasis")).name}
+        </div>
+    )
+}
 
 ReactDOM.render(
-  
   <BrowserRouter>
-  
-  <App />
-	
+      <App />
   </BrowserRouter>,
   document.getElementById("root")
 ); 
@@ -25,7 +33,7 @@ ReactDOM.render(
 // In Webpck HotModuleReplacementPlugin() is used to set hot to true. 
 // This way the browser dont need to reload the entire page when changing  file !
 // Note: Needed here - in contrast to Vue.js  !!
- if (module.hot) {
-    module.hot.accept();
- }
+//  if (module.hot) {
+//     module.hot.accept();
+//  }
 

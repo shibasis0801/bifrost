@@ -1,4 +1,4 @@
-const pathtoresolve = require('path');
+const path = require('path');
 const paths = require('./paths')
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
@@ -25,19 +25,13 @@ module.exports = {
 
   resolve: {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
-    alias: {
-      'components': pathtoresolve.resolve(__dirname, '../src/components/'),
-      'images': pathtoresolve.resolve(__dirname, '../src/images/'),
-      'styles': pathtoresolve.resolve(__dirname, '../src/styles/'),
-    }
+    alias: {}
   },
 
 
   // Customize the webpack build process
   plugins: [
 
-
-    //new FriendlyErrorsPlugin(),
 
     // Removes/cleans build folders and unused assets when rebuilding
     new CleanWebpackPlugin(),
@@ -62,8 +56,7 @@ module.exports = {
     // Generates an HTML file from a template
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
-      title: 'webpack Boilerplate',
-      favicon: paths.src + '/images/favicon.png',
+      title: 'Batcave',
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
     }),

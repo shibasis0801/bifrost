@@ -8,7 +8,9 @@
   "scripts": {
     "start": "webpack serve --config config/webpack.dev.js --progress",
     "build": "webpack --config config/webpack.prod.js",
-    "prod": "http-server ./dist -a localhost -p 8005 -o"
+    "compress": "cd dist/js && gzip *",
+    "serve": "http-server ./dist -gba localhost -p 8005 -o",
+    "prod": "yarn build && yarn compress  && yarn serve"
   },
   "keywords": [
     "webpack 5",
@@ -57,6 +59,7 @@
     "url": "https://github.com/persteenolsen/webpack-5-react-typescript-boilerplate"
   },
   "dependencies": {
+    "batcave": "file:../shared/batcave",
     "@babel/runtime": "^7.13.10",
     "core-js": "^3.10.0",
     "react": "^17.0.1",

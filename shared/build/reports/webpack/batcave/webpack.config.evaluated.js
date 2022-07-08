@@ -22,7 +22,7 @@
       patterns: [
         {
           from: 'kotlin/batcave.d.ts',
-          to: '../../../shared/batcave'
+          to: '../../shared/batcave'
         }
       ],
       options: {}

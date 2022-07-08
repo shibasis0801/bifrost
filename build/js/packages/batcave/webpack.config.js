@@ -73,7 +73,7 @@ config.plugins.push(
             // }
             {
                 from: "kotlin/batcave.d.ts",
-                to: "../../../shared/batcave"
+                to: "../../shared/batcave"
             }
         ]
     })
