@@ -13,40 +13,40 @@
   'use strict';
   //region block: imports
   var imul = Math.imul;
-  var interfaceMeta = kotlin_kotlin.$_$.a1;
-  var captureStack = kotlin_kotlin.$_$.t;
-  var classMeta = kotlin_kotlin.$_$.u;
-  var IllegalArgumentException_init_$Init$ = kotlin_kotlin.$_$.f;
-  var IllegalArgumentException_init_$Init$_0 = kotlin_kotlin.$_$.g;
-  var IllegalArgumentException = kotlin_kotlin.$_$.f1;
-  var Unit_getInstance = kotlin_kotlin.$_$.j;
-  var Iterator = kotlin_kotlin.$_$.l;
-  var Iterable = kotlin_kotlin.$_$.k;
+  var interfaceMeta = kotlin_kotlin.$_$.r2;
+  var captureStack = kotlin_kotlin.$_$.k2;
+  var classMeta = kotlin_kotlin.$_$.l2;
+  var IllegalArgumentException_init_$Init$ = kotlin_kotlin.$_$.m;
+  var IllegalArgumentException_init_$Init$_0 = kotlin_kotlin.$_$.o;
+  var IllegalArgumentException = kotlin_kotlin.$_$.d3;
+  var Unit_getInstance = kotlin_kotlin.$_$.b1;
+  var Iterator = kotlin_kotlin.$_$.e1;
+  var Iterable = kotlin_kotlin.$_$.d1;
   var getKClassFromExpression = kotlin_kotlin.$_$.a;
-  var ensureNotNull = kotlin_kotlin.$_$.h1;
-  var getStringHashCode = kotlin_kotlin.$_$.y;
-  var objectMeta = kotlin_kotlin.$_$.b1;
-  var copyToArray = kotlin_kotlin.$_$.o;
-  var hashCode = kotlin_kotlin.$_$.z;
-  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.d;
-  var contentHashCode = kotlin_kotlin.$_$.n;
-  var HashMap_init_$Create$ = kotlin_kotlin.$_$.e;
-  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.c;
-  var arrayIterator = kotlin_kotlin.$_$.r;
-  var fillArrayVal = kotlin_kotlin.$_$.w;
-  var booleanArray = kotlin_kotlin.$_$.s;
-  var emptyMap = kotlin_kotlin.$_$.p;
-  var lazy = kotlin_kotlin.$_$.i1;
-  var contentEquals = kotlin_kotlin.$_$.m;
-  var equals = kotlin_kotlin.$_$.v;
-  var until = kotlin_kotlin.$_$.c1;
-  var joinToString$default = kotlin_kotlin.$_$.b;
-  var KProperty1 = kotlin_kotlin.$_$.d1;
-  var getPropertyCallableRef = kotlin_kotlin.$_$.x;
-  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.h;
-  var Annotation = kotlin_kotlin.$_$.e1;
-  var get_indices = kotlin_kotlin.$_$.q;
-  var IndexOutOfBoundsException_init_$Create$ = kotlin_kotlin.$_$.i;
+  var ensureNotNull = kotlin_kotlin.$_$.j3;
+  var getStringHashCode = kotlin_kotlin.$_$.p2;
+  var objectMeta = kotlin_kotlin.$_$.v2;
+  var copyToArray = kotlin_kotlin.$_$.i1;
+  var hashCode = kotlin_kotlin.$_$.q2;
+  var ArrayList_init_$Create$ = kotlin_kotlin.$_$.e;
+  var contentHashCode = kotlin_kotlin.$_$.h1;
+  var HashMap_init_$Create$ = kotlin_kotlin.$_$.f;
+  var ArrayList_init_$Create$_0 = kotlin_kotlin.$_$.d;
+  var arrayIterator = kotlin_kotlin.$_$.i2;
+  var fillArrayVal = kotlin_kotlin.$_$.n2;
+  var booleanArray = kotlin_kotlin.$_$.j2;
+  var emptyMap = kotlin_kotlin.$_$.j1;
+  var lazy = kotlin_kotlin.$_$.k3;
+  var contentEquals = kotlin_kotlin.$_$.g1;
+  var equals = kotlin_kotlin.$_$.m2;
+  var until = kotlin_kotlin.$_$.x2;
+  var joinToString$default = kotlin_kotlin.$_$.c;
+  var KProperty1 = kotlin_kotlin.$_$.y2;
+  var getPropertyCallableRef = kotlin_kotlin.$_$.o2;
+  var IllegalStateException_init_$Create$ = kotlin_kotlin.$_$.p;
+  var Annotation = kotlin_kotlin.$_$.a3;
+  var get_indices = kotlin_kotlin.$_$.k1;
+  var IndexOutOfBoundsException_init_$Create$ = kotlin_kotlin.$_$.r;
   //endregion
   //region block: pre-declaration
   SerializationException.prototype = Object.create(IllegalArgumentException.prototype);
@@ -105,7 +105,7 @@
   }
   SerializationException.$metadata$ = classMeta('SerializationException', undefined, undefined, undefined, undefined, IllegalArgumentException.prototype);
   function MissingFieldException_init_$Init$(fieldNames, serialName, $this) {
-    MissingFieldException.call($this, fieldNames.l() === 1 ? "Field '" + fieldNames.n2(0) + "' is required for type with serial name '" + serialName + "', but it was missing" : 'Fields ' + fieldNames + " are required for type with serial name '" + serialName + "', but they were missing", null);
+    MissingFieldException.call($this, fieldNames.g() === 1 ? "Field '" + fieldNames.y3(0) + "' is required for type with serial name '" + serialName + "', but it was missing" : 'Fields ' + fieldNames + " are required for type with serial name '" + serialName + "', but they were missing", null);
     return $this;
   }
   function MissingFieldException_init_$Create$(fieldNames, serialName) {
@@ -129,27 +129,27 @@
     return tmp$ret$0;
   }
   function elementDescriptors$1$1($this_elementDescriptors) {
-    this.m7_1 = $this_elementDescriptors;
-    this.l7_1 = $this_elementDescriptors.i7();
+    this.fd_1 = $this_elementDescriptors;
+    this.ed_1 = $this_elementDescriptors.bd();
   }
   elementDescriptors$1$1.prototype.d = function () {
-    return this.l7_1 > 0;
+    return this.ed_1 > 0;
   };
   elementDescriptors$1$1.prototype.e = function () {
-    var tmp = this.m7_1.i7();
+    var tmp = this.fd_1.bd();
     var tmp0_this = this;
-    var tmp1 = tmp0_this.l7_1;
-    tmp0_this.l7_1 = tmp1 - 1 | 0;
-    return this.m7_1.k7(tmp - tmp1 | 0);
+    var tmp1 = tmp0_this.ed_1;
+    tmp0_this.ed_1 = tmp1 - 1 | 0;
+    return this.fd_1.dd(tmp - tmp1 | 0);
   };
   elementDescriptors$1$1.$metadata$ = classMeta(undefined, [Iterator]);
   function _no_name_provided__qut3iv($this_elementDescriptors) {
-    this.n7_1 = $this_elementDescriptors;
+    this.gd_1 = $this_elementDescriptors;
   }
   _no_name_provided__qut3iv.prototype.c = function () {
     var tmp$ret$0;
     {
-      tmp$ret$0 = new elementDescriptors$1$1(this.n7_1);
+      tmp$ret$0 = new elementDescriptors$1$1(this.gd_1);
     }
     return tmp$ret$0;
   };
@@ -157,7 +157,7 @@
   function SerialKind() {
   }
   SerialKind.prototype.toString = function () {
-    return ensureNotNull(getKClassFromExpression(this).h4());
+    return ensureNotNull(getKClassFromExpression(this).w6());
   };
   SerialKind.prototype.hashCode = function () {
     return getStringHashCode(this.toString());
@@ -300,17 +300,17 @@
         inductionVariable = inductionVariable + 1 | 0;
         if (!((missingFieldsBits & 1) === 0)) {
           {
-            var tmp0_plusAssign = descriptor.j7(i);
+            var tmp0_plusAssign = descriptor.cd(i);
             missingFields.b(tmp0_plusAssign);
           }
         }
         missingFieldsBits = missingFieldsBits >>> 1 | 0;
       }
        while (inductionVariable < 32);
-    throw MissingFieldException_init_$Create$(missingFields, descriptor.g7());
+    throw MissingFieldException_init_$Create$(missingFields, descriptor.zc());
   }
   function hashCodeImpl(_this__u8e3s4, typeParams) {
-    var result = getStringHashCode(_this__u8e3s4.g7());
+    var result = getStringHashCode(_this__u8e3s4.zc());
     result = imul(31, result) + contentHashCode(typeParams) | 0;
     var elementDescriptors = get_elementDescriptors(_this__u8e3s4);
     var tmp$ret$4;
@@ -329,7 +329,7 @@
             {
               var tmp$ret$0;
               {
-                tmp$ret$0 = element.g7();
+                tmp$ret$0 = element.zc();
               }
               var tmp0_hashCode = tmp$ret$0;
               var tmp0_safe_receiver = tmp0_hashCode;
@@ -361,7 +361,7 @@
             {
               var tmp$ret$5;
               {
-                tmp$ret$5 = element_0.h7();
+                tmp$ret$5 = element_0.ad();
               }
               var tmp0_hashCode_0 = tmp$ret$5;
               var tmp0_safe_receiver_0 = tmp0_hashCode_0;
@@ -385,7 +385,7 @@
     var tmp$ret$0;
     {
       var tmp0_getValue = childSerializers$factory();
-      tmp$ret$0 = $this.x7_1.v();
+      tmp$ret$0 = $this.qd_1.b1();
     }
     return tmp$ret$0;
   }
@@ -393,21 +393,21 @@
     var tmp$ret$0;
     {
       var tmp0_getValue = _hashCode$factory();
-      tmp$ret$0 = $this.z7_1.v();
+      tmp$ret$0 = $this.sd_1.b1();
     }
     return tmp$ret$0;
   }
   function buildIndices($this) {
     var indices = HashMap_init_$Create$();
     var inductionVariable = 0;
-    var last = $this.s7_1.length - 1 | 0;
+    var last = $this.ld_1.length - 1 | 0;
     if (inductionVariable <= last)
       do {
         var i = inductionVariable;
         inductionVariable = inductionVariable + 1 | 0;
         {
-          var tmp0_set = $this.s7_1[i];
-          indices.k1(tmp0_set, i);
+          var tmp0_set = $this.ld_1[i];
+          indices.u1(tmp0_set, i);
         }
       }
        while (inductionVariable <= last);
@@ -415,8 +415,8 @@
   }
   function PluginGeneratedSerialDescriptor$childSerializers$delegate$lambda(this$0) {
     return function () {
-      var tmp0_safe_receiver = this$0.p7_1;
-      var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.a8();
+      var tmp0_safe_receiver = this$0.id_1;
+      var tmp1_elvis_lhs = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.td();
       var tmp;
       if (tmp1_elvis_lhs == null) {
         var tmp$ret$0;
@@ -432,8 +432,8 @@
   }
   function PluginGeneratedSerialDescriptor$typeParameterDescriptors$delegate$lambda(this$0) {
     return function () {
-      var tmp0_safe_receiver = this$0.p7_1;
-      var tmp1_safe_receiver = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.b8();
+      var tmp0_safe_receiver = this$0.id_1;
+      var tmp1_safe_receiver = tmp0_safe_receiver == null ? null : tmp0_safe_receiver.ud();
       var tmp;
       if (tmp1_safe_receiver == null) {
         tmp = null;
@@ -448,7 +448,7 @@
               var item = tmp0_iterator.e();
               var tmp$ret$0;
               {
-                tmp$ret$0 = item.f7();
+                tmp$ret$0 = item.yc();
               }
               tmp0_mapTo.b(tmp$ret$0);
             }
@@ -463,22 +463,22 @@
   }
   function PluginGeneratedSerialDescriptor$_hashCode$delegate$lambda(this$0) {
     return function () {
-      return hashCodeImpl(this$0, this$0.c8());
+      return hashCodeImpl(this$0, this$0.vd());
     };
   }
   function PluginGeneratedSerialDescriptor$toString$lambda(this$0) {
     return function (i) {
-      return this$0.j7(i) + ': ' + this$0.k7(i).g7();
+      return this$0.cd(i) + ': ' + this$0.dd(i).zc();
     };
   }
   function PluginGeneratedSerialDescriptor(serialName, generatedSerializer, elementsCount) {
-    this.o7_1 = serialName;
-    this.p7_1 = generatedSerializer;
-    this.q7_1 = elementsCount;
-    this.r7_1 = -1;
+    this.hd_1 = serialName;
+    this.id_1 = generatedSerializer;
+    this.jd_1 = elementsCount;
+    this.kd_1 = -1;
     var tmp = this;
     var tmp_0 = 0;
-    var tmp_1 = this.q7_1;
+    var tmp_1 = this.jd_1;
     var tmp$ret$0;
     {
       tmp$ret$0 = fillArrayVal(Array(tmp_1), null);
@@ -493,56 +493,56 @@
       tmp_2[tmp_3] = tmp$ret$1;
       tmp_0 = tmp_0 + 1 | 0;
     }
-    tmp.s7_1 = tmp_2;
+    tmp.ld_1 = tmp_2;
     var tmp_4 = this;
     var tmp$ret$2;
     {
-      var tmp0_arrayOfNulls = this.q7_1;
+      var tmp0_arrayOfNulls = this.jd_1;
       tmp$ret$2 = fillArrayVal(Array(tmp0_arrayOfNulls), null);
     }
-    tmp_4.t7_1 = tmp$ret$2;
-    this.u7_1 = null;
-    this.v7_1 = booleanArray(this.q7_1);
-    this.w7_1 = emptyMap();
+    tmp_4.md_1 = tmp$ret$2;
+    this.nd_1 = null;
+    this.od_1 = booleanArray(this.jd_1);
+    this.pd_1 = emptyMap();
     var tmp_5 = this;
-    tmp_5.x7_1 = lazy(PluginGeneratedSerialDescriptor$childSerializers$delegate$lambda(this));
+    tmp_5.qd_1 = lazy(PluginGeneratedSerialDescriptor$childSerializers$delegate$lambda(this));
     var tmp_6 = this;
-    tmp_6.y7_1 = lazy(PluginGeneratedSerialDescriptor$typeParameterDescriptors$delegate$lambda(this));
+    tmp_6.rd_1 = lazy(PluginGeneratedSerialDescriptor$typeParameterDescriptors$delegate$lambda(this));
     var tmp_7 = this;
-    tmp_7.z7_1 = lazy(PluginGeneratedSerialDescriptor$_hashCode$delegate$lambda(this));
+    tmp_7.sd_1 = lazy(PluginGeneratedSerialDescriptor$_hashCode$delegate$lambda(this));
   }
-  PluginGeneratedSerialDescriptor.prototype.g7 = function () {
-    return this.o7_1;
+  PluginGeneratedSerialDescriptor.prototype.zc = function () {
+    return this.hd_1;
   };
-  PluginGeneratedSerialDescriptor.prototype.i7 = function () {
-    return this.q7_1;
+  PluginGeneratedSerialDescriptor.prototype.bd = function () {
+    return this.jd_1;
   };
-  PluginGeneratedSerialDescriptor.prototype.h7 = function () {
+  PluginGeneratedSerialDescriptor.prototype.ad = function () {
     return CLASS_getInstance();
   };
-  PluginGeneratedSerialDescriptor.prototype.c8 = function () {
+  PluginGeneratedSerialDescriptor.prototype.vd = function () {
     var tmp$ret$0;
     {
       var tmp0_getValue = typeParameterDescriptors$factory();
-      tmp$ret$0 = this.y7_1.v();
+      tmp$ret$0 = this.rd_1.b1();
     }
     return tmp$ret$0;
   };
-  PluginGeneratedSerialDescriptor.prototype.d8 = function (name, isOptional) {
+  PluginGeneratedSerialDescriptor.prototype.wd = function (name, isOptional) {
     var tmp0_this = this;
-    tmp0_this.r7_1 = tmp0_this.r7_1 + 1 | 0;
-    this.s7_1[tmp0_this.r7_1] = name;
-    this.v7_1[this.r7_1] = isOptional;
-    this.t7_1[this.r7_1] = null;
-    if (this.r7_1 === (this.q7_1 - 1 | 0)) {
-      this.w7_1 = buildIndices(this);
+    tmp0_this.kd_1 = tmp0_this.kd_1 + 1 | 0;
+    this.ld_1[tmp0_this.kd_1] = name;
+    this.od_1[this.kd_1] = isOptional;
+    this.md_1[this.kd_1] = null;
+    if (this.kd_1 === (this.jd_1 - 1 | 0)) {
+      this.pd_1 = buildIndices(this);
     }
   };
-  PluginGeneratedSerialDescriptor.prototype.k7 = function (index) {
-    return getChecked(_get_childSerializers__7vnyfa(this), index).f7();
+  PluginGeneratedSerialDescriptor.prototype.dd = function (index) {
+    return getChecked(_get_childSerializers__7vnyfa(this), index).yc();
   };
-  PluginGeneratedSerialDescriptor.prototype.j7 = function (index) {
-    return getChecked(this.s7_1, index);
+  PluginGeneratedSerialDescriptor.prototype.cd = function (index) {
+    return getChecked(this.ld_1, index);
   };
   PluginGeneratedSerialDescriptor.prototype.equals = function (other) {
     var tmp$ret$0;
@@ -555,34 +555,34 @@
         tmp$ret$0 = false;
         break $l$block_5;
       }
-      if (!(this.g7() === other.g7())) {
+      if (!(this.zc() === other.zc())) {
         tmp$ret$0 = false;
         break $l$block_5;
       }
       var tmp$ret$1;
       {
         var tmp0__anonymous__q1qw7t = other;
-        tmp$ret$1 = contentEquals(this.c8(), tmp0__anonymous__q1qw7t.c8());
+        tmp$ret$1 = contentEquals(this.vd(), tmp0__anonymous__q1qw7t.vd());
       }
       if (!tmp$ret$1) {
         tmp$ret$0 = false;
         break $l$block_5;
       }
-      if (!(this.i7() === other.i7())) {
+      if (!(this.bd() === other.bd())) {
         tmp$ret$0 = false;
         break $l$block_5;
       }
       var inductionVariable = 0;
-      var last = this.i7();
+      var last = this.bd();
       if (inductionVariable < last)
         do {
           var index = inductionVariable;
           inductionVariable = inductionVariable + 1 | 0;
-          if (!(this.k7(index).g7() === other.k7(index).g7())) {
+          if (!(this.dd(index).zc() === other.dd(index).zc())) {
             tmp$ret$0 = false;
             break $l$block_5;
           }
-          if (!equals(this.k7(index).h7(), other.k7(index).h7())) {
+          if (!equals(this.dd(index).ad(), other.dd(index).ad())) {
             tmp$ret$0 = false;
             break $l$block_5;
           }
@@ -596,8 +596,8 @@
     return _get__hashCode__tgwhef(this);
   };
   PluginGeneratedSerialDescriptor.prototype.toString = function () {
-    var tmp = until(0, this.q7_1);
-    var tmp_0 = this.g7() + '(';
+    var tmp = until(0, this.jd_1);
+    var tmp_0 = this.zc() + '(';
     return joinToString$default(tmp, ', ', tmp_0, ')', 0, null, PluginGeneratedSerialDescriptor$toString$lambda(this), 24, null);
   };
   PluginGeneratedSerialDescriptor.$metadata$ = classMeta('PluginGeneratedSerialDescriptor', [SerialDescriptor, CachedNames]);
@@ -608,7 +608,7 @@
   }
   function typeParameterDescriptors$factory() {
     return getPropertyCallableRef('typeParameterDescriptors', 1, KProperty1, function (receiver) {
-      return receiver.c8();
+      return receiver.vd();
     }, null);
   }
   function _hashCode$factory() {
@@ -646,10 +646,10 @@
   }
   function StringSerializer() {
     StringSerializer_instance = this;
-    this.e8_1 = new PrimitiveSerialDescriptor('kotlin.String', STRING_getInstance());
+    this.xd_1 = new PrimitiveSerialDescriptor('kotlin.String', STRING_getInstance());
   }
-  StringSerializer.prototype.f7 = function () {
-    return this.e8_1;
+  StringSerializer.prototype.yc = function () {
+    return this.xd_1;
   };
   StringSerializer.$metadata$ = objectMeta('StringSerializer', [KSerializer]);
   var StringSerializer_instance;
@@ -662,26 +662,26 @@
     throw IllegalStateException_init_$Create$('Primitive descriptor does not have elements');
   }
   function PrimitiveSerialDescriptor(serialName, kind) {
-    this.f8_1 = serialName;
-    this.g8_1 = kind;
+    this.yd_1 = serialName;
+    this.zd_1 = kind;
   }
-  PrimitiveSerialDescriptor.prototype.g7 = function () {
-    return this.f8_1;
+  PrimitiveSerialDescriptor.prototype.zc = function () {
+    return this.yd_1;
   };
-  PrimitiveSerialDescriptor.prototype.h7 = function () {
-    return this.g8_1;
+  PrimitiveSerialDescriptor.prototype.ad = function () {
+    return this.zd_1;
   };
-  PrimitiveSerialDescriptor.prototype.i7 = function () {
+  PrimitiveSerialDescriptor.prototype.bd = function () {
     return 0;
   };
-  PrimitiveSerialDescriptor.prototype.j7 = function (index) {
+  PrimitiveSerialDescriptor.prototype.cd = function (index) {
     error(this);
   };
-  PrimitiveSerialDescriptor.prototype.k7 = function (index) {
+  PrimitiveSerialDescriptor.prototype.dd = function (index) {
     error(this);
   };
   PrimitiveSerialDescriptor.prototype.toString = function () {
-    return 'PrimitiveDescriptor(' + this.f8_1 + ')';
+    return 'PrimitiveDescriptor(' + this.yd_1 + ')';
   };
   PrimitiveSerialDescriptor.$metadata$ = classMeta('PrimitiveSerialDescriptor', [SerialDescriptor]);
   function SerializableWith() {

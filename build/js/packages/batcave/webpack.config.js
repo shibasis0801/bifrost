@@ -74,10 +74,23 @@ config.plugins.push(
             {
                 from: "kotlin/batcave.d.ts",
                 to: "../../shared/batcave"
+            },
+            {
+                from: '../../node_modules/sql.js/dist/sql-wasm.wasm',
+                to: '../../webApp/dist'
             }
         ]
     })
 );
+
+// sql.js
+config.resolve = {
+    fallback: {
+        fs: false,
+        path: false,
+        crypto: false,
+    }
+};
 
 
 // save evaluated config file

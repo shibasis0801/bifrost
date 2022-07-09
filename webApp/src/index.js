@@ -9,6 +9,7 @@ const batcave = _batcave.shared.me.user.shared
 
 function App() {
 console.log(_batcave)
+    batcave.database.helloSQL()
     return (
         <div>
             {batcave.helloWorld("React from Kotlin")}

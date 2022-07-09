@@ -25,4 +25,7 @@ export namespace me.user.shared {
         static Test_init_$Create$(seen1: number, name: Nullable<string>, serializationConstructorMarker: any/* Nullable<kotlinx.serialization.internal.SerializationConstructorMarker> */): me.user.shared.Test;
     }
 }
+export namespace me.user.shared.database {
+    function helloSQL(): void;
+}
 export as namespace batcave;

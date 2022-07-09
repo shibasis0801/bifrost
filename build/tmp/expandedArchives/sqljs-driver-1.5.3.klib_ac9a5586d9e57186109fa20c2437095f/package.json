@@ -1,0 +1,13 @@
+{
+  "name": "sqldelight-sqljs-driver-js-ir",
+  "version": "1.5.3",
+  "main": "sqldelight-sqljs-driver-js-ir.js",
+  "types": "sqldelight-sqljs-driver-js-ir.d.ts",
+  "devDependencies": {},
+  "dependencies": {
+    "sql.js": "1.6.2"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "bundledDependencies": []
+}

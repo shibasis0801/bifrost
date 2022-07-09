@@ -1,15 +1,20 @@
+
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     kotlin("plugin.serialization")
-    id("com.android.library")
+    id("com.squareup.sqldelight")
 }
 
 group = "me.user"
 version = "1.0-SNAPSHOT"
 
 kotlin {
-    android()
+    jvm {
+        compilations.all {
+            kotlinOptions.jvmTarget = "11"
+        }
+    }
     ios()
     js("web", IR) {
         moduleName = "batcave"
@@ -49,6 +54,9 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.2.2")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3")
+                implementation("com.squareup.sqldelight:runtime:1.5.3")
+
             }
         }
         val commonTest by getting {
@@ -56,30 +64,29 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
-        val androidMain by getting {
+        val jvmMain by getting {
             dependencies {
-                implementation("com.google.android.material:material:1.2.1")
+                implementation("com.squareup.sqldelight:sqlite-driver:1.5.3")
+
             }
         }
-        val iosMain by getting
+        val iosMain by getting {
+            dependencies {
+                implementation("com.squareup.sqldelight:native-driver:1.5.3")
+            }
+        }
         val webMain by getting {
             dependencies {
                 implementation(devNpm("copy-webpack-plugin", "11.0.0"))
+                implementation("com.squareup.sqldelight:sqljs-driver:1.5.3")
             }
         }
 
     }
 }
 
-android {
-    compileSdkVersion(29)
-    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
-    defaultConfig {
-        minSdkVersion(24)
-        targetSdkVersion(29)
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+sqldelight {
+    database("BatcaveDB") {
+        packageName = "me.user.shared"
     }
 }

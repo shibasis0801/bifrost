@@ -9,6 +9,10 @@ config.plugins.push(
             {
                 from: "kotlin/batcave.d.ts",
                 to: "../../shared/batcave"
+            },
+            {
+                from: '../../node_modules/sql.js/dist/sql-wasm.wasm',
+                to: '../../webApp/dist'
             }
         ]
     })

@@ -1,15 +1,31 @@
 {
   "version": "9",
   "items": {
+    "39e7f8521c3857ed30e3bb0a378588c0": {
+      "src": "/Users/300067934/.gradle/caches/modules-2/files-2.1/com.squareup.sqldelight/runtime-js/1.5.3/bf89e554a2329b0314add0fec65847465e8864e/runtime-jsir-1.5.3.klib"
+    },
+    "91ad9de498cfa4f6c415a71b317605c0": {
+      "src": "/Users/300067934/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-js/1.7.0/554446425fc3e360edc626fdd1d5bbab7ec72bb5/kotlin-stdlib-js-1.7.0.jar",
+      "target": "kotlin/1.7.0"
+    },
     "0289541566f726c115c6ac6448f2cd5b": {
       "src": "/Users/300067934/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.0/51736992f422993a1e741051bdf3c12801bc1ca1/kotlin-stdlib-common-1.7.0.jar"
     },
     "47c877fa6dd8ea7211072dd0ddeedcec": {
       "src": "/Users/300067934/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-js/1.2.2/b12a1eef56f0fb8dc6d4b2012c4d8cc858a76200/kotlinx-serialization-core-jsir-1.2.2.klib"
     },
-    "91ad9de498cfa4f6c415a71b317605c0": {
-      "src": "/Users/300067934/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-js/1.7.0/554446425fc3e360edc626fdd1d5bbab7ec72bb5/kotlin-stdlib-js-1.7.0.jar",
-      "target": "kotlin/1.7.0"
+    "466373857a3828024c0eb06e94d21ad3": {
+      "src": "/Users/300067934/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-js/1.6.3/a887affcdfeb84a581ced4a193cb3aa71efa0ae2/kotlinx-coroutines-core-jsir-1.6.3.klib"
+    },
+    "489089308e6bacd4b18fc93c501bb01c": {
+      "src": "/Users/300067934/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/atomicfu-js/0.17.3/5fd992f78532945e29a1c54279eafffe2a0c95fe/atomicfu-jsir-0.17.3.klib"
+    },
+    "68b4fc3260b20bef86b65f0a39fae75a": {
+      "src": "/Users/300067934/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/atomicfu/1.6.21/f486917a9c89e5c7d5d08009d58ad810a57a7011/atomicfu-1.6.21.jar"
+    },
+    "ac9a5586d9e57186109fa20c2437095f": {
+      "src": "/Users/300067934/.gradle/caches/modules-2/files-2.1/com.squareup.sqldelight/sqljs-driver/1.5.3/c3cdae7562dd5eb16fe0f10e2ba8236cc229013c/sqljs-driver-1.5.3.klib",
+      "target": "sqldelight-sqljs-driver-js-ir/1.5.3"
     },
     "895195c673d7ea83de5af201c50e8279": {
       "src": "/Users/300067934/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-test-js-runner/1.7.0/c776694bcd8ec38ab942d5ca1d896ca805c9541f/kotlin-test-js-runner-1.7.0.jar",

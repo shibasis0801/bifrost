@@ -6,6 +6,7 @@
     "packages/batcave",
     "packages/batcave-test",
     "packages_imported/kotlin/1.7.0",
+    "packages_imported/sqldelight-sqljs-driver-js-ir/1.5.3",
     "packages_imported/kotlin-test-js-runner/1.7.0",
     "packages_imported/kotlin-test/1.7.0"
   ],

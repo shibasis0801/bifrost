@@ -1,9 +1,11 @@
 {
   mode: 'production',
   resolve: {
-    modules: [
-      'node_modules'
-    ]
+    fallback: {
+      fs: false,
+      path: false,
+      crypto: false
+    }
   },
   plugins: [
     ProgressPlugin {
@@ -23,6 +25,10 @@
         {
           from: 'kotlin/batcave.d.ts',
           to: '../../shared/batcave'
+        },
+        {
+          from: '../../node_modules/sql.js/dist/sql-wasm.wasm',
+          to: '../../webApp/dist'
         }
       ],
       options: {}

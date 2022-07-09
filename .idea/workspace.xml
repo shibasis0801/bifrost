@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c853ae10-ca98-456c-be72-3035e0dd872e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/me/user/shared/database/SQLDelight.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/commonMain/sqldelight/me/user/.idea/user.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/jvmMain/kotlin/me/user/shared/Platform.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/src/jvmMain/kotlin/me/user/shared/createDriver.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/webpack.config.d/sql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.batcave/androidDebug/implementation/org.jetbrains.kotlinx-kotlinx-serialization-core/org.jetbrains.kotlinx-kotlinx-serialization-core-commonMain.klib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.batcave/androidRelease/implementation/org.jetbrains.kotlinx-kotlinx-serialization-core/org.jetbrains.kotlinx-kotlinx-serialization-core-commonMain.klib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.batcave/commonMain/implementation/org.jetbrains.kotlinx-kotlinx-serialization-core/org.jetbrains.kotlinx-kotlinx-serialization-core-commonMain.klib" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.batcave/commonMain/implementation/org.jetbrains.kotlinx-kotlinx-serialization-core/org.jetbrains.kotlinx-kotlinx-serialization-core-commonMain.klib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.batcave/iosMain/implementation/org.jetbrains.kotlinx-kotlinx-serialization-core/org.jetbrains.kotlinx-kotlinx-serialization-core-nativeMain.klib" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/kotlin/sourceSetMetadata/shared.batcave/iosMain/implementation/org.jetbrains.kotlinx-kotlinx-serialization-core/org.jetbrains.kotlinx-kotlinx-serialization-core-nativeMain.klib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/shared_web_1_0_SNAPSHOT.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/iosApp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xcode.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/androidApp/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/androidApp/src/main/java/me/user/androidApp/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/androidApp/src/main/java/me/user/androidApp/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/batcave.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/batcave.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/batcave.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/batcave.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/batcave.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/batcave.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/kotlin-kotlin-stdlib-js-ir.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/kotlin-kotlin-stdlib-js-ir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/kotlin-kotlin-stdlib-js-ir.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/kotlin-kotlin-stdlib-js-ir.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/packages/batcave/kotlin/kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/packages/batcave/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/packages/batcave/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/packages_imported/.visited-gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/packages_imported/.visited-gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kotlin-js-store/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/kotlin-js-store/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/batcave/batcave.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/batcave/batcave.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/batcave/batcave.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/batcave/batcave.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/batcave/batcave.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/shared/batcave/batcave.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/bodies.knb" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/bodies.knb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/debugInfo.knd" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/debugInfo.knd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/files.knf" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/files.knf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/irDeclarations.knd" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/irDeclarations.knd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/signatures.knt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/signatures.knt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/strings.knt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/strings.knt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/types.knt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/ir/types.knt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/linkdata/module" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/linkdata/module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/linkdata/package_me.user.shared/0_shared.knm" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/linkdata/package_me.user.shared/0_shared.knm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/linkdata/package_me.user.shared/1_shared.knm" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/linkdata/package_me.user.shared/1_shared.knm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/linkdata/package_me.user.shared/2_shared.knm" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/linkdata/package_me.user.shared/2_shared.knm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/manifest" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/classes/kotlin/web/main/default/manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/batcave.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/batcave.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/batcave.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/batcave.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/batcave.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/batcave.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/kotlin-kotlin-stdlib-js-ir.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/kotlin-kotlin-stdlib-js-ir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/kotlin-kotlin-stdlib-js-ir.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/kotlin-kotlin-stdlib-js-ir.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/compileSync/main/productionExecutable/kotlin/kotlin_org_jetbrains_kotlinx_kotlinx_serialization_core.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-attributes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/class-fq-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/complementary-files.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/complementary-files.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/complementary-files.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/complementary-files.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/header.meta" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/header.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/ir-translation-result.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/source-to-classes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/subtypes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/supertypes.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/js/translation-result.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/counters.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/file-to-id.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/id-to-file.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/caches-js/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/cacheable/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/local-state/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/kotlin/compileKotlinWeb/local-state/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/build/reports/webpack/batcave/webpack.config.evaluated.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/build/reports/webpack/batcave/webpack.config.evaluated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/androidMain/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/androidMain/kotlin/me/user/shared/Platform.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/commonMain/kotlin/me/user/shared/Platform.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/commonMain/kotlin/me/user/shared/Platform.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/iosMain/kotlin/me/user/shared/Platform.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/iosMain/kotlin/me/user/shared/Platform.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/webMain/kotlin/me/user/shared/Platform.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/webMain/kotlin/me/user/shared/Platform.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/webpack.config.d/copy.js" beforeDir="false" afterPath="$PROJECT_DIR$/shared/webpack.config.d/copy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webApp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webApp/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/shared">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="batcave" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="batcave" type="f1a62948:ProjectNode" />
+                <item name="shared" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="batcave" type="f1a62948:ProjectNode" />
+                <item name="shared" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="batcave" type="f1a62948:ProjectNode" />
+                <item name="shared" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="batcave" type="f1a62948:ProjectNode" />
+                <item name="shared" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="kotlin browser" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="batcave" type="f1a62948:ProjectNode" />
+                <item name="shared" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="nodejs" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KotlinMultiplatform">
+    <allAvailableExecutables />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BersQzUAfHec7ck9JEtB8fsKGy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/300067934/shibasis/batcave",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "/Users/300067934/shibasis/batcave/webApp/node_modules/typescript/lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.batcave:shared [webBrowserProductionWebpack]">
+    <configuration name="iosApp" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="iosApp" TARGET_NAME="iosApp" CONFIG_NAME="Debug" SCHEME_NAME="iosApp" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="iosApp" RUN_TARGET_NAME="iosApp" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="batcave:shared [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="DEVELOPER_DIR" value="/Applications/Xcode.app/Contents/Developer" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/shared" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="batcave:shared [webBrowserProductionExecutableDistributeResources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="DEVELOPER_DIR" value="/Applications/Xcode.app/Contents/Developer" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/shared" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="webBrowserProductionExecutableDistributeResources" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="batcave:shared [webBrowserProductionWebpack]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="DEVELOPER_DIR" value="/Applications/Xcode.app/Contents/Developer" />
+          </map>
+        </option>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/shared" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="webBrowserProductionWebpack" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Android App" type="KonanMobile" factoryName="KonanMobile" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <module name="batcave.androidApp" />
+      <devices>
+        <device display-name="LE2101 | Android 31" />
+      </devices>
+      <method v="2">
+        <option name="MobileBuild" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Android Library Tests" type="KonanMobileTest" factoryName="KonanMobileTest" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <module name="batcave.shared" />
+      <devices>
+        <device display-name="Local Device | JVM " />
+      </devices>
+      <method v="2">
+        <option name="MobileBuild" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Common Tests" type="KonanMobileTest" factoryName="KonanMobileTest" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <module name="batcave.shared.commonTest" />
+      <devices>
+        <device display-name="CustomPhone API 30 | Android 30" />
+      </devices>
+      <method v="2">
+        <option name="MobileBuild" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOS Library Tests" type="KonanMobileTest" factoryName="KonanMobileTest" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <module name="batcave.shared.iosTest" />
+      <devices>
+        <device display-name="iPhone 11 | iOS 15.0" />
+      </devices>
+      <method v="2">
+        <option name="MobileBuild" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="prod" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/webApp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prod" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/webApp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.iosApp" />
+      <item itemvalue="Gradle.batcave:shared [build]" />
+      <item itemvalue="Gradle.batcave:shared [webBrowserProductionExecutableDistributeResources]" />
+      <item itemvalue="Gradle.batcave:shared [webBrowserProductionWebpack]" />
+      <item itemvalue="Kotlin Mobile.Android App" />
+      <item itemvalue="Kotlin Mobile Test.Android Library Tests" />
+      <item itemvalue="Kotlin Mobile Test.Common Tests" />
+      <item itemvalue="Kotlin Mobile Test.iOS Library Tests" />
+      <item itemvalue="npm.prod" />
+      <item itemvalue="npm.start" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.batcave:shared [webBrowserProductionWebpack]" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="Gradle.batcave:shared [build]" />
+        <item itemvalue="Gradle.batcave:shared [webBrowserProductionExecutableDistributeResources]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c853ae10-ca98-456c-be72-3035e0dd872e" name="Changes" comment="" />
+      <created>1657277600804</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657277600804</updated>
+      <workItem from="1657277608441" duration="2736000" />
+      <workItem from="1657280795012" duration="47000" />
+      <workItem from="1657280864891" duration="5857000" />
+      <workItem from="1657287011021" duration="2409000" />
+      <workItem from="1657289468974" duration="3830000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/webApp" />
+      <path value="$PROJECT_DIR$/webpack-5-react-typescript-boilerplate" />
+    </ignored-roots>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
