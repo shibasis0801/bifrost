@@ -16,7 +16,7 @@ kotlin {
         }
     }
     ios()
-    js("web", IR) {
+    js(IR) {
         moduleName = "batcave"
         compilations["main"].packageJson {
 
@@ -75,7 +75,7 @@ kotlin {
                 implementation("com.squareup.sqldelight:native-driver:1.5.3")
             }
         }
-        val webMain by getting {
+        val jsMain by getting {
             dependencies {
                 implementation(devNpm("copy-webpack-plugin", "11.0.0"))
                 implementation("com.squareup.sqldelight:sqljs-driver:1.5.3")
