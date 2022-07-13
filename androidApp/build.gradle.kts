@@ -12,6 +12,7 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 implementation(project(":shared"))
+                implementation(project(":database"))
                 implementation("com.google.android.material:material:1.2.1")
                 implementation("androidx.appcompat:appcompat:1.2.0")
                 implementation("androidx.constraintlayout:constraintlayout:2.0.2")

@@ -21,3 +21,22 @@ It will let you build your UI and Server layers independently of business logic.
     2. Gradle Webpack task for connecting from Web with TypeScript
     3. React Native Turbo Module connector
     4. Flutter Channel based connector
+
+### Description
+
+#### LRU Cache
+
+Normal / Coroutine based Least Recently Used Cache. (Study a good LRU library)
+Meant to be configurable at-least: 
+1. Cache size in items and length
+2. CRUD Storage interface ( file, database, network )
+3. Try to copy some items from how service workers work
+
+
+RelationalInterface - none for web initially
+KeyValueInterface
+
+JSI - github repo
+KV - possible for 3, easier
+SQL - possible for 2, 1 with hack
+LRU - pure code

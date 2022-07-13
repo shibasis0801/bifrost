@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="database-js-1.0-SNAPSHOT">
+    <output-path>$PROJECT_DIR$/database/build/libs</output-path>
+    <root id="archive" name="database-js-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="batcave.database.jsMain" />
+    </root>
+  </artifact>
+</component>

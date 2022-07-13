@@ -1,8 +1,0 @@
-builtins_platform=JS
-unique_name=com.squareup.sqldelight\:runtime
-compiler_version=1.5.31
-depends=kotlin
-jsOutputName=sqldelight-runtime-js-ir
-abi_version=1.5.0
-metadata_version=1.4.1
-ir_version=1.0.0

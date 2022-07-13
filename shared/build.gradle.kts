@@ -1,9 +1,9 @@
-
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     kotlin("plugin.serialization")
     id("com.squareup.sqldelight")
+    id("maven-publish")
 }
 
 group = "me.user"
@@ -53,7 +53,7 @@ kotlin {
 
         val commonMain by getting {
             dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.2.2")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.3.3")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3")
                 implementation("com.squareup.sqldelight:runtime:1.5.3")
 
