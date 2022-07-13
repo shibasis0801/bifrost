@@ -1,8 +1,0 @@
-builtins_platform=JS
-unique_name=me.user\:shared
-compiler_version=1.7.0
-depends=com.squareup.sqldelight\:sqljs-driver com.squareup.sqldelight\:runtime org.jetbrains.kotlinx\:kotlinx-serialization-core org.jetbrains.kotlinx\:kotlinx-coroutines-core org.jetbrains.kotlinx\:atomicfu kotlin org.jetbrains.kotlin\:kotlinx-atomicfu-runtime
-jsOutputName=batcave
-abi_version=1.7.0
-metadata_version=1.4.1
-ir_version=1.0.0
