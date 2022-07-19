@@ -9,8 +9,5 @@ pluginManagement {
 }
 rootProject.name = "batcave"
 
-
 include(":androidApp")
-include(":shared")
 include(":database")
-

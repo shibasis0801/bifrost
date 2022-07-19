@@ -388,3 +388,7 @@ crashlytics-build.properties
 build
 
 **/build
+
+.idea
+.idea/*
+iosApp/Pods/

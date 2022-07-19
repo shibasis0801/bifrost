@@ -6,21 +6,31 @@ import kotlinx.coroutines.launch
 import com.myntra.appscore.MainDatabase
 import kotlin.js.JsExport
 
+/*
+Koin Annotations didn't work.
+Will try on a standalone project first
+ */
 
-class SQLDatabase(private val sqlDriver: SqlDriver) {
-    private val mainDatabase by lazy {
-        MainDatabase(sqlDriver)
+
+expect class DriverProvider {
+    suspend fun get(): SqlDriver
+}
+
+class SQLDatabase(private val driverProvider: DriverProvider) {
+    private var mainDatabase: MainDatabase? = null
+
+    suspend operator fun <R> invoke(block: suspend MainDatabase.() -> R): R {
+        if (mainDatabase == null) {
+            val driver = driverProvider.get()
+            mainDatabase = MainDatabase(driver)
+        }
+        return mainDatabase!!.block()
     }
-    suspend operator fun <R> invoke(block: suspend MainDatabase.() -> R): R =
-        mainDatabase.block()
 }
 
 
-/*
-val sqlDatabase = SQLDatabase(::createDriver)
 
-@JsExport
-fun helloSQL1() {
+fun runQuery(sqlDatabase: SQLDatabase) {
     println("PRINT SQL DATA")
     GlobalScope.launch {
         println("PRINT SQL DATA")
@@ -33,11 +43,3 @@ fun helloSQL1() {
     }
 }
 
-*/
-
-/*
-Implementation Notes
-
-Koin Annotations will provide
-
- */

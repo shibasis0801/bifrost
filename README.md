@@ -40,3 +40,21 @@ JSI - github repo
 KV - possible for 3, easier
 SQL - possible for 2, 1 with hack
 LRU - pure code
+
+#### BiFrost
+
+It is possible to send over simple data types both directly as well as 
+a promise from a Turbo Module.
+( Simple Data + TurboObject + TurboArray + TurboPromise )
+
+We can write a small extension function which can interconvert between the types. 
+
+
+
+### DevOps 
+
+#### Gradle 
+A simple gradle bifrost plugin which would connect KMM to React Native easily
+
+#### KMM starter template
+A KMM Starter with RN Turbo Module support

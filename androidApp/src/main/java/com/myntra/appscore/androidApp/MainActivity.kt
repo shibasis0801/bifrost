@@ -1,10 +1,11 @@
-package me.user.androidApp
+package com.myntra.appscore.androidApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import me.user.shared.Greeting
+
 import android.widget.TextView
-import me.user.shared.database.helloSQL
+import com.myntra.appscore.database.Greeting
+import com.myntra.appscore.database.runQuery
 
 fun greet(): String {
     return Greeting().greeting()
@@ -17,7 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         val tv: TextView = findViewById(R.id.text_view)
         tv.text = greet()
-
-        helloSQL()
+//        runQuery()
     }
 }

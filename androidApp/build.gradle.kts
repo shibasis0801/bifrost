@@ -3,7 +3,7 @@ plugins {
     id("com.android.application")
 }
 
-group = "me.user"
+group = "com.myntra.appscore"
 version = "1.0-SNAPSHOT"
 
 kotlin {
@@ -11,23 +11,22 @@ kotlin {
     sourceSets {
         val androidMain by getting {
             dependencies {
-                implementation(project(":shared"))
-                implementation(project(":database"))
+//                implementation(project(":shared"))
+                api(project(":database"))
                 implementation("com.google.android.material:material:1.2.1")
                 implementation("androidx.appcompat:appcompat:1.2.0")
                 implementation("androidx.constraintlayout:constraintlayout:2.0.2")
-                implementation("com.squareup.sqldelight:android-driver:1.5.3")
             }
         }
     }
 }
 
 android {
-    compileSdkVersion(29)
+    compileSdkVersion(31)
     defaultConfig {
-        applicationId = "me.user.androidApp"
+        applicationId = "com.myntra.appscore.androidApp"
         minSdkVersion(24)
-        targetSdkVersion(29)
+        targetSdkVersion(31)
         versionCode = 1
         versionName = "1.0"
     }

@@ -3,16 +3,21 @@ package com.reactnativeturbostarter
 import android.content.Context.BATTERY_SERVICE
 import android.os.BatteryManager
 import com.facebook.react.bridge.*
+import com.myntra.appscore.database.Platform
 
 class TurboStarterModule(reactContext: ReactApplicationContext?) :
     NativeTurboStarterSpec(reactContext) {
+
+    init {
+        reactContext?.applicationContext
+    }
 
     private val batteryManager: BatteryManager? by lazy {
         reactContext?.getSystemService(BATTERY_SERVICE) as BatteryManager
     }
 
     override fun getGreeting(name: String): String {
-        return String.format("Hello, %s!", name)
+        return String.format("Hello, %s!", Platform.platform)
     }
 
     override fun getTurboArray(values: ReadableArray): WritableArray {
@@ -47,6 +52,7 @@ class TurboStarterModule(reactContext: ReactApplicationContext?) :
     }
 
     override fun getTurboPromise(magicNumber: Double, promise: Promise) {
+
         when (magicNumber) {
             42.0 -> {
                 promise.resolve(true)

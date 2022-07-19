@@ -5,7 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import _batcave from "batcave";
-const batcave = _batcave.shared.me.user.shared
+const batcave = _batcave.shared.com.myntra.appscore.shared
 
 function App() {
 console.log(_batcave)

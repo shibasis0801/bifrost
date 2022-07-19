@@ -25,7 +25,4 @@ export namespace com.myntra.appscore.database {
         static Test_init_$Create$(seen1: number, name: Nullable<string>, serializationConstructorMarker: any/* Nullable<kotlinx.serialization.internal.SerializationConstructorMarker> */): com.myntra.appscore.database.Test;
     }
 }
-export namespace com.myntra.appscore.database {
-    function helloSQL1(): void;
-}
 export as namespace database;

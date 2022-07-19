@@ -5,14 +5,14 @@ plugins {
     kotlin("plugin.serialization")
     id("com.squareup.sqldelight")
     id("maven-publish")
-    id("com.google.devtools.ksp") version "1.7.10-1.0.6"
 }
 
 group = "com.myntra.appscore"
 version = "1.0-SNAPSHOT"
 
 kotlin {
-    android {
+    android() {
+        publishLibraryVariants("release", "debug")
         compilations.all {
             kotlinOptions.jvmTarget = "11"
         }
@@ -59,7 +59,6 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3")
                 implementation("com.squareup.sqldelight:runtime:1.5.3")
                 implementation("io.insert-koin:koin-core:3.2.0")
-
             }
         }
         val commonTest by getting {
@@ -109,10 +108,17 @@ android {
 }
 
 dependencies {
-    configurations
-        .filter { it.name.startsWith("ksp") }
-        .forEach {
-            println(it.name)
-            add(it.name, "io.insert-koin:koin-ksp-compiler:1.0.1")
-        }
+    var koinEnabledConfigs = listOf(
+        "kspCommonMainMetadata",
+        "kspAndroid",
+        "kspIosArm64",
+        "kspIosX64",
+        "kspJs"
+    )
+
+//    koinEnabledConfigs
+//        .forEach {
+//            println(it)
+//            add(it, "io.insert-koin:koin-ksp-compiler:1.0.1")
+//        }
 }
