@@ -9,6 +9,14 @@ Back-End:  JVM, NodeJS, Go
 You can write your Data / Logic / Framework layer in Kotlin Multiplatform using this.
 It will let you build your UI and Server layers independently of business logic.
 
+### Integrations
+
+### Kotlin Multiplatform
+W
+
+### React Native 
+We use Hermes and pure Turbo Modules ( no autolinking )
+
 
 ### Modules
 

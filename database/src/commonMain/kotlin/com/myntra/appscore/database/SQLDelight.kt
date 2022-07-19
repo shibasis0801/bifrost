@@ -27,6 +27,14 @@ class SQLDatabase(private val driverProvider: DriverProvider) {
     }
 }
 
+data class Player(val playerNumber: Long, val fullName: String)
+
+suspend fun getPlayers(sqlDatabase: SQLDatabase): List<Player> = sqlDatabase {
+    helloQueries
+        .selectAll { player_number, full_name ->
+            Player(player_number, full_name)
+        }.executeAsList()
+}
 
 
 fun runQuery(sqlDatabase: SQLDatabase) {

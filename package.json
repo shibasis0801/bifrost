@@ -1,0 +1,13 @@
+{
+  "name": "batcave",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "yarn react-native start",
+    "forwardPorts": "adb reverse tcp:8081 tcp:8081"
+  },
+  "dependencies": {
+    "react": "17",
+    "react-native": "0.68.2"
+  }
+}

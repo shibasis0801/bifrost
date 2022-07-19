@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        google()
+        gradlePluginPortal()
+        mavenCentral()
+    }
+    
+}
+rootProject.name = "batcave"
+
+include(":android")
+include(":database")
+
+
+
