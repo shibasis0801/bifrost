@@ -17,7 +17,12 @@ kotlin {
             kotlinOptions.jvmTarget = "11"
         }
     }
-    ios()
+    ios() {
+        binaries.all {
+            linkerOpts("sqlite3")
+        }
+    }
+
     js(IR) {
         moduleName = "database"
         compilations["main"].packageJson {
@@ -44,6 +49,7 @@ kotlin {
         framework {
             baseName = "database"
         }
+
     }
 
     sourceSets {

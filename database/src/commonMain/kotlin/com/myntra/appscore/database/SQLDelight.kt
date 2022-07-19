@@ -5,7 +5,6 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import com.myntra.appscore.MainDatabase
 import kotlin.js.JsExport
-
 /*
 Koin Annotations didn't work.
 Will try on a standalone project first
@@ -42,4 +41,3 @@ fun runQuery(sqlDatabase: SQLDatabase) {
         }
     }
 }
-
