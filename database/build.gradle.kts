@@ -5,6 +5,7 @@ plugins {
     kotlin("plugin.serialization")
     id("com.squareup.sqldelight")
     id("maven-publish")
+    id("dev.shibasis.bifrost.plugin")
 }
 
 group = "com.myntra.appscore"
