@@ -49,4 +49,5 @@ object Version {
     const val SoLoader = "0.10.1"
 
     const val Koin = "3.2.0"
+    const val KoinAnnotations = "1.0.1"
 }
