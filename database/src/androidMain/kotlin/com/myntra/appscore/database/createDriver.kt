@@ -7,9 +7,7 @@ import com.squareup.sqldelight.db.SqlDriver
 import com.squareup.sqldelight.android.AndroidSqliteDriver
 
 
-actual class DriverProvider(activity: Activity) {
-    private val driver = AndroidSqliteDriver(MainDatabase.Schema, activity, "main.db")
+actual class DriverProvider(context: Context) {
+    private val driver = AndroidSqliteDriver(MainDatabase.Schema, context, "main.db")
     actual suspend fun get(): SqlDriver = driver
 }
-
-fun createDriver(activity: Activity) = DriverProvider(activity)

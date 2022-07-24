@@ -49,3 +49,9 @@ fun runQuery(sqlDatabase: SQLDatabase) {
         }
     }
 }
+
+suspend fun getItems(sqlDatabase: SQLDatabase) = sqlDatabase {
+    helloQueries
+        .selectAll { _, full_name -> full_name }
+        .executeAsList()
+}

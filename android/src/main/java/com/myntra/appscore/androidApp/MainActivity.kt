@@ -19,7 +19,7 @@ class MainActivity : BaseActivity() {
         Log.d("", "SHIBASIS")
 
 
-        val driver = createDriver(this)
+        val driver = DriverProvider(this)
         val database = SQLDatabase(driver)
         runQuery(database)
     }

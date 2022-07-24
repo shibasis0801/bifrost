@@ -7,7 +7,14 @@
     "forwardPorts": "adb reverse tcp:8081 tcp:8081"
   },
   "dependencies": {
+    "metro-config": "^0.71.3",
+    "metro-react-native-babel-preset": "^0.71.3",
     "react": "17",
     "react-native": "0.68.2"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "<rootDir>/build/"
+    ]
   }
 }

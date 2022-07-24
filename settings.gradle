@@ -10,6 +10,7 @@ rootProject.name = "batcave"
 
 include(":android")
 include(":database")
+includeBuild("node_modules/react-native-gradle-plugin")
 
 
 
