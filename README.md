@@ -15,7 +15,7 @@ It will let you build your UI and Server layers independently of business logic.
 W
 
 ### React Native 
-We use Hermes and pure Turbo Modules ( no autolinking )
+We use Hermes and pure Turbo Modules
 
 
 ### Modules
