@@ -38,10 +38,10 @@ Library and plugin to ease out Turbo Module interop
 #### Web
 Babel replacement plugin to directly replace TurboModules in RNW with Kotlin/JS
 
-### Servers (Go / JVM / Node)
+#### Servers (Go / JVM / Node)
 Common model classes exposed through Kotlin/JS, Kotlin/JVM (and gobind)
 
-### Logic
+#### Logic
 Use Zipline to modify some client logic ondemand without app deploys
 
 ### Modules
