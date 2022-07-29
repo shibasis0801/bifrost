@@ -3,20 +3,46 @@
 
 ### Purpose
 Share business logic across 
+
 Front-End: Android, iOS, Web
+
 Back-End:  JVM, NodeJS, Go
 
 You can write your Data / Logic / Framework layer in Kotlin Multiplatform using this.
 It will let you build your UI and Server layers independently of business logic.
 
+### Planned working
+1. Create Spec(Interface) and Model classes in TypeScript
+2. Create Kotlin modules which access Platform APIs and expose configurable APIs
+3. Create a Bifrost module which allows easy use from RN, and facilitates gradle, turbo modules, etc
+
 ### Integrations
 
+
 ### Kotlin Multiplatform
-W
+Both in (JVM / JS) and (Android / iOS / JS) to share all non UI logic
+
+Plan is to create a Myntra Framework layer to abstract out android / iOS / web / server
+This would accelerate creating new apps here
+Analytics, Database, Networking, etc would be common and configurable 
+(micro frontends)
 
 ### React Native 
-We use Hermes and pure Turbo Modules ( no autolinking )
+We use Hermes and pure Turbo Modules
 
+### Bifrost
+
+#### Android, iOS
+Library and plugin to ease out Turbo Module interop
+
+#### Web
+Babel replacement plugin to directly replace TurboModules in RNW with Kotlin/JS
+
+#### Servers (Go / JVM / Node)
+Common model classes exposed through Kotlin/JS, Kotlin/JVM (and gobind)
+
+#### Logic
+Use Zipline to modify some client logic ondemand without app deploys
 
 ### Modules
 
@@ -42,12 +68,20 @@ Meant to be configurable at-least:
 
 
 RelationalInterface - none for web initially
+
 KeyValueInterface
 
 JSI - github repo
+
 KV - possible for 3, easier
+
 SQL - possible for 2, 1 with hack
+
 LRU - pure code
+
+Current Status
+
+SQLDelight working on all 3 platforms (including web, but in memory right now)
 
 #### BiFrost
 
