@@ -86,6 +86,9 @@ repositories {
 
 dependencies {
     implementation project(':ReactAndroid')
+    implementation("com.myntra.appscore:database:1.0-SNAPSHOT")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.3")
+
 }
 
 if (isNewArchitectureEnabled()) {

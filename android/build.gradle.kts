@@ -1,6 +1,17 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.application")
+    id("com.facebook.react")
+    id("dev.shibasis.bifrost.plugin")
+}
+
+buildscript {
+    extra.apply {
+        set("react", mapOf(
+            "enableHermes" to true,
+            "root" to "../"
+        ))
+    }
 }
 
 group = "com.myntra.appscore"
@@ -11,32 +22,16 @@ kotlin {
     sourceSets {
         val androidMain by getting {
             dependencies {
-//                implementation(project(":shared"))
                 api(project(":database"))
-                implementation("com.facebook.react:react-native:0.68.2")
+                api(project(":ReactAndroid"))
+
                 implementation("com.google.android.material:material:1.2.1")
                 implementation("androidx.appcompat:appcompat:1.2.0")
                 implementation("androidx.constraintlayout:constraintlayout:2.0.2")
 
-                val lifecycle_version = "2.6.0-alpha01"
-                val arch_version = "2.1.0"
-
-                // ViewModel
-                implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
-                // ViewModel utilities for Compose
-                implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
-                // LiveData
-                implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
-                // Lifecycles only (without ViewModel or LiveData)
+                val lifecycle_version = "2.4.0"
                 implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
-
-                // Saved state module for ViewModel
-                implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version")
-
-                // optional - helpers for implementing LifecycleOwner in a Service
                 implementation("androidx.lifecycle:lifecycle-service:$lifecycle_version")
-
-                // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
                 implementation("androidx.lifecycle:lifecycle-process:$lifecycle_version")
             }
         }
@@ -44,11 +39,11 @@ kotlin {
 }
 
 android {
-    compileSdkVersion(31)
+    compileSdkVersion(32)
     defaultConfig {
         applicationId = "com.myntra.appscore.android"
         minSdkVersion(24)
-        targetSdkVersion(31)
+        targetSdkVersion(32)
         versionCode = 1
         versionName = "1.0"
     }
@@ -62,3 +57,7 @@ android {
         }
     }
 }
+
+apply(from = file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"));
+val applyNativeModulesAppBuildGradle = extensions.extraProperties("applyNativeModulesAppBuildGradle") as Closure<Any>
+applyNativeModulesAppBuildGradle(project)

@@ -19,6 +19,7 @@ export interface Spec extends TurboModule {
   getTurboObject(options: { title: string }): { response: string };
   getTurboObjectGeneric(options: Object): Object;
   getTurboPromise(magicNumber: number): Promise<boolean>;
+  getSQLRecord(): Promise<Array<string>>;
 
   //
   // Native JSI calls

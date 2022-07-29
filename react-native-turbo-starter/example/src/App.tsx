@@ -57,9 +57,11 @@ const App = () => {
   const [promise1, setPromise1] = React.useState<boolean>(false);
   const [promise2, setPromise2] = React.useState<boolean>(false);
   const [promise3, setPromise3] = React.useState<string>('');
+  const [items, setItems] = React.useState<Array<string>>([]);
 
   React.useEffect(() => {
     NativeTurboStarter.getGreeting('Yotam');
+    NativeTurboStarter.getSQLRecord().then(setItems).catch(console.error);
     NativeTurboStarter.getTurboPromise(42).then((res) => setPromise1(res));
     NativeTurboStarter.getTurboPromise(1).then((res) => setPromise2(res));
     NativeTurboStarter.getTurboPromise(7).catch((error: Error) => {
@@ -109,6 +111,9 @@ const App = () => {
           <Section title="getTurboPromise (resolve)">{`${promise1}`}</Section>
           <Section title="getTurboPromise (resolve) 2">{`${promise2}`}</Section>
           <Section title="getTurboPromise (reject)">{promise3}</Section>
+
+          <Section title="getSQLRecord">{items.join(',')}</Section>
+
           <Section title="getBatteryLevel">
             {NativeTurboStarter.getBatteryLevel()}
           </Section>

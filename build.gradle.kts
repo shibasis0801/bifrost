@@ -4,12 +4,10 @@ buildscript {
         google()
         mavenCentral {
             content {
-                excludeGroup "com.facebook.react"
+                excludeGroup("com.facebook.react")
             }
         }
-        maven {
-            url("$rootDir/node_modules/react-native/android")
-        }
+        maven(url = "$rootDir/node_modules/react-native/android")
     }
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
@@ -27,18 +25,12 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven {
-            url("$rootDir/node_modules/react-native/android")
-        }
-        maven {
-            // Android JSC is installed from npm
-            url("$rootDir/node_modules/jsc-android/dist")
-        }
+        maven(url = "$rootDir/node_modules/react-native/android")
         mavenCentral {
             // We don't want to fetch react-native from Maven Central as there are
             // older versions over there.
             content {
-                excludeGroup "com.facebook.react"
+                excludeGroup("com.facebook.react")
             }
         }
     }
