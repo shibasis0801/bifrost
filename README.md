@@ -68,12 +68,20 @@ Meant to be configurable at-least:
 
 
 RelationalInterface - none for web initially
+
 KeyValueInterface
 
 JSI - github repo
+
 KV - possible for 3, easier
+
 SQL - possible for 2, 1 with hack
+
 LRU - pure code
+
+Current Status
+
+SQLDelight working on all 3 platforms (including web, but in memory right now)
 
 #### BiFrost
 
