@@ -8,6 +8,10 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinAndroidTarget
 
+/*
+Needs a lot of improvements
+Right now it just hides things
+ */
 fun LibraryExtension.kmmAndroidApply() {
     compileSdk = Version.SDK.compileSdk
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
@@ -21,16 +25,38 @@ fun LibraryExtension.kmmAndroidApply() {
     }
 }
 
-fun BaseAppModuleExtension.androidApply() {
+fun BaseAppModuleExtension.androidApply(appID: String) {
     compileSdk = Version.SDK.compileSdk
-    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
+
     defaultConfig {
+        applicationId = appID
         minSdk = Version.SDK.minSdk
         targetSdk = Version.SDK.targetSdk
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary = true
+        }
     }
     compileOptions {
         sourceCompatibility = Version.SDK.Java.asEnum
         targetCompatibility = Version.SDK.Java.asEnum
+    }
+
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Version.Compose
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
     }
 }
 
@@ -42,16 +68,16 @@ fun LibraryExtension.libraryDefaults() {
         targetSdk = Version.SDK.targetSdk
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-//        consumerProguardFiles("consumer-rules.pro")
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
-//            proguardFiles(
-//                getDefaultProguardFile("proguard-android-optimize.txt"),
-//                "proguard-rules.pro"
-//            )
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
@@ -62,9 +88,11 @@ fun LibraryExtension.libraryDefaults() {
 
 fun KotlinMultiplatformExtension.droid(configure: KotlinAndroidTarget.() -> Unit = {}) {
     android {
+        publishLibraryVariants("release", "debug")
         compilations.all {
             kotlinOptions.jvmTarget = Version.SDK.Java.asString
         }
         configure()
     }
 }
+

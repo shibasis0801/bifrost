@@ -1,3 +1,5 @@
+import dev.shibasis.bifrost.android.droid
+
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
@@ -12,12 +14,7 @@ group = "com.myntra.appscore"
 version = "1.0-SNAPSHOT"
 
 kotlin {
-    android() {
-        publishLibraryVariants("release", "debug")
-        compilations.all {
-            kotlinOptions.jvmTarget = "11"
-        }
-    }
+    droid()
     ios() {
         binaries.all {
             linkerOpts("sqlite3")
