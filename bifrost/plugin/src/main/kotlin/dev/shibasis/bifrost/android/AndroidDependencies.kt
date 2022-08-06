@@ -65,6 +65,7 @@ fun composeList(
     module("androidx.compose.compiler:compiler:$compose_version"),
     module("androidx.compose.ui:ui:$compose_version"),
     module("androidx.compose.ui:ui-tooling:$compose_version"),
+    module("androidx.compose.ui:ui-tooling-preview:$compose_version"),
     module("androidx.compose.foundation:foundation:$compose_version"),
     module("androidx.navigation:navigation-compose:2.4.1"),
     module("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1"),
