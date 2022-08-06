@@ -16,5 +16,14 @@
     "modulePathIgnorePatterns": [
       "<rootDir>/build/"
     ]
+  },
+  "codegenConfig": {
+    "libraries": [
+      {
+        "name": "react-bifrost",
+        "type": "modules",
+        "jsSrcsDir": "./bifrost-react/js"
+      }
+    ]
   }
 }

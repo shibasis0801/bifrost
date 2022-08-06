@@ -1,3 +1,5 @@
+import groovy.lang.Closure
+
 rootProject.name = "batcave"
 
 pluginManagement {
@@ -11,15 +13,15 @@ pluginManagement {
 include(":ReactAndroid")
 project(":ReactAndroid").projectDir = file("node_modules/react-native/ReactAndroid")
 
-include(":android")
+include(":bifrost-react")
 include(":database")
-
+include(":overlord-lab")
 includeBuild("bifrost")
 includeBuild("node_modules/react-native-gradle-plugin")
 
 
 
 apply(from = file("node_modules/@react-native-community/cli-platform-android/native_modules.gradle"));
-val applyNativeModulesSettingsGradle = extensions.extraProperties("applyNativeModulesSettingsGradle") as groovy.lang.Closure<Any>
+val applyNativeModulesSettingsGradle = extra["applyNativeModulesSettingsGradle"] as Closure<Any>
 applyNativeModulesSettingsGradle(settings)
 
