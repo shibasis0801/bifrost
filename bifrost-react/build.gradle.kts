@@ -44,7 +44,7 @@ android {
 
 
 dependencies {
-    api(project(":database"))
+//    api(project(":database"))
     api(project(":ReactAndroid"))
     basic()
     extensions()
@@ -55,3 +55,8 @@ dependencies {
 apply(from = file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"));
 val applyNativeModulesAppBuildGradle = project.extra["applyNativeModulesAppBuildGradle"] as Closure<Any>
 applyNativeModulesAppBuildGradle(project)
+
+/*
+Copy stuff from npx react-native init template here
+for windows old architecture, for others new architecture
+ */

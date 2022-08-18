@@ -12,6 +12,7 @@ fun KotlinMultiplatformExtension.web(configure: KotlinJsTargetDsl.() -> Unit = {
                 showProgress = true
                 export = true
                 progressReporter = true
+                cssSupport.enabled = true
             }
 
             webpackTask {

@@ -14,8 +14,8 @@ include(":ReactAndroid")
 project(":ReactAndroid").projectDir = file("node_modules/react-native/ReactAndroid")
 
 include(":bifrost-react")
-include(":database")
-include(":overlord-lab")
+//include(":database")
+//include(":overlord-lab")
 includeBuild("bifrost")
 includeBuild("node_modules/react-native-gradle-plugin")
 

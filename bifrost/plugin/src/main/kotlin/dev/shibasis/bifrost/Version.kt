@@ -23,6 +23,9 @@ object Version {
     const val Lifecycle = "2.4.0"
     const val Navigation = "2.3.2"
 
+    // Web
+    const val KotlinJSWrappers = "1.0.0-pre.369"
+
     // Network
     const val SQLDelight = "1.5.3"
     const val Room = "2.4.2"

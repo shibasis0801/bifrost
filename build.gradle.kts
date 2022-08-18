@@ -1,4 +1,5 @@
 buildscript {
+    val ndkVersion by extra( "25.0.8775105")
     repositories {
         gradlePluginPortal()
         google()
