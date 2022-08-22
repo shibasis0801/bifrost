@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/GitHub/overlord/batcave/bifrost-react/.cxx/Debug/5x583u3i/x86",
+  "command": "C:\\Users\\shiba\\AppData\\Local\\Android\\Sdk\\ndk\\25.0.8775105\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/shiba/AppData/Local/Android/Sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dbifrost_react_EXPORTS -I../../../../cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=gnu++17 -o CMakeFiles\\bifrost-react.dir\\cpp\\react-native-turbo-starter.cpp.o -c C:\\GitHub\\overlord\\batcave\\bifrost-react\\cpp\\react-native-turbo-starter.cpp",
+  "file": "C:/GitHub/overlord/batcave/bifrost-react/cpp/react-native-turbo-starter.cpp"
+},
+{
+  "directory": "C:/GitHub/overlord/batcave/bifrost-react/.cxx/Debug/5x583u3i/x86",
+  "command": "C:\\Users\\shiba\\AppData\\Local\\Android\\Sdk\\ndk\\25.0.8775105\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/shiba/AppData/Local/Android/Sdk/ndk/25.0.8775105/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dbifrost_react_EXPORTS -I../../../../cpp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -fno-limit-debug-info  -fPIC -Wall -Werror -fexceptions -frtti -std=gnu++17 -o CMakeFiles\\bifrost-react.dir\\src\\main\\jni\\cpp-adapter.cpp.o -c C:\\GitHub\\overlord\\batcave\\bifrost-react\\src\\main\\jni\\cpp-adapter.cpp",
+  "file": "C:/GitHub/overlord/batcave/bifrost-react/src/main/jni/cpp-adapter.cpp"
+}
+]

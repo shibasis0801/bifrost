@@ -7,8 +7,10 @@ import com.squareup.sqldelight.drivers.native.NativeSqliteDriver
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import platform.Foundation.NSString
 
 import platform.UIKit.UIDevice
+import platform.darwin.NSObject
 
 actual class Platform actual constructor() {
     actual val platform: String = UIDevice.currentDevice.systemName() + " " + UIDevice.currentDevice.systemVersion
@@ -29,6 +31,13 @@ fun runBlockingQuery(sqlDatabase: SQLDatabase): Unit = runBlocking {
                 println("PRINT SQL DATA, $player_number, $full_name")
             }.executeAsList()
         }
+    }
+}
+
+
+class Cursor {
+    fun getNext(): NSString {
+        return "Shibasis" as NSString
     }
 }
 

@@ -7,6 +7,7 @@ object Version {
         const val minSdk = 24
         const val compileSdk = 32
         const val targetSdk = 32
+        const val ndkVersion = "25.0.8775105"
 
         const val Kotlin = "1.7.10"
         object Java {
@@ -21,6 +22,9 @@ object Version {
     const val Fragment = "1.3.6"
     const val Lifecycle = "2.4.0"
     const val Navigation = "2.3.2"
+
+    // Web
+    const val KotlinJSWrappers = "1.0.0-pre.369"
 
     // Network
     const val SQLDelight = "1.5.3"

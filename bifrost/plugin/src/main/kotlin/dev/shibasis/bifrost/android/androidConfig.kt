@@ -7,11 +7,14 @@ import org.gradle.kotlin.dsl.get
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinAndroidTarget
+import java.io.File
+import java.nio.file.Paths
 
 /*
 Needs a lot of improvements
 Right now it just hides things
  */
+@Suppress("UnstableApiUsage")
 fun LibraryExtension.kmmAndroidApply() {
     compileSdk = Version.SDK.compileSdk
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
@@ -25,9 +28,11 @@ fun LibraryExtension.kmmAndroidApply() {
     }
 }
 
-fun BaseAppModuleExtension.androidApply(appID: String) {
+@Suppress("UnstableApiUsage")
+fun BaseAppModuleExtension.androidApply(appID: String, useNDK: Boolean = false) {
     compileSdk = Version.SDK.compileSdk
-
+//    if (useNDK)
+//        ndkVersion = Version.SDK.ndkVersion
     defaultConfig {
         applicationId = appID
         minSdk = Version.SDK.minSdk
@@ -39,7 +44,26 @@ fun BaseAppModuleExtension.androidApply(appID: String) {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        if (useNDK)
+            externalNativeBuild {
+                cmake {
+                    cFlags.addAll(listOf("-Wall", "-Werror", "-fexceptions", "-frtti", "-DWITH_INSPECTOR=1"))
+                    arguments.add("-DCMAKE_VERBOSE_MAKEFILE=1")
+                    cppFlags.add("-std=c++17")
+                }
+            }
     }
+
+    if (useNDK)
+        externalNativeBuild {
+            cmake {
+                path = File("./CMakeLists.txt")
+                // pin cmake version to support M1 machines
+                version = "3.22.1"
+            }
+        }
+
     compileOptions {
         sourceCompatibility = Version.SDK.Java.asEnum
         targetCompatibility = Version.SDK.Java.asEnum
@@ -60,16 +84,40 @@ fun BaseAppModuleExtension.androidApply(appID: String) {
     }
 }
 
-
-fun LibraryExtension.libraryDefaults() {
+@Suppress("UnstableApiUsage")
+fun LibraryExtension.libraryDefaults(cmakeLists: File? = null) {
+    val useNDK = cmakeLists != null
     compileSdk = Version.SDK.compileSdk
+    println("SHIBASIS $useNDK")
+    if (useNDK)
+        ndkVersion = Version.SDK.ndkVersion
     defaultConfig {
         minSdk = Version.SDK.minSdk
         targetSdk = Version.SDK.targetSdk
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+
+        if (useNDK)
+            externalNativeBuild {
+                cmake {
+                    cFlags.addAll(listOf("-Wall", "-Werror", "-fexceptions", "-frtti", "-DWITH_INSPECTOR=1"))
+                    arguments.add("-DCMAKE_VERBOSE_MAKEFILE=1")
+                    cppFlags.add("-std=c++17")
+                }
+            }
     }
+
+    val library = this
+    if (useNDK)
+        externalNativeBuild {
+            cmake {
+                path = cmakeLists
+                // pin cmake version to support M1 machines
+                version = "3.22.1"
+            }
+        }
+
 
     buildTypes {
         release {
@@ -80,12 +128,21 @@ fun LibraryExtension.libraryDefaults() {
             )
         }
     }
+
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = Version.Compose
+    }
+
     compileOptions {
         sourceCompatibility = Version.SDK.Java.asEnum
         targetCompatibility = Version.SDK.Java.asEnum
     }
 }
 
+@Suppress("UnstableApiUsage")
 fun KotlinMultiplatformExtension.droid(configure: KotlinAndroidTarget.() -> Unit = {}) {
     android {
         publishLibraryVariants("release", "debug")
