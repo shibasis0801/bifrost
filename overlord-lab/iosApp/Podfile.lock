@@ -1,0 +1,16 @@
+PODS:
+  - database (1.0-SNAPSHOT)
+
+DEPENDENCIES:
+  - database (from `../../database`)
+
+EXTERNAL SOURCES:
+  database:
+    :path: "../../database"
+
+SPEC CHECKSUMS:
+  database: 030cb8e0ccc871be6c9d8e64973a5a495006148d
+
+PODFILE CHECKSUM: 80d91e89f7647af208310f28d65262b71fb3e09d
+
+COCOAPODS: 1.11.3

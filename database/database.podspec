@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
     spec.license                  = ''
     spec.summary                  = 'Some description for the database Module'
     spec.vendored_frameworks      = 'build/cocoapods/framework/database.framework'
-    spec.libraries                = 'c++', 'sqlite3'
+    spec.libraries                = 'c++'
     spec.ios.deployment_target = '14.1'
                 
                 

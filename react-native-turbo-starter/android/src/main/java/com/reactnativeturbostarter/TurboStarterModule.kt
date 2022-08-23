@@ -29,81 +29,81 @@ class TurboStarterModule(reactContext: ReactApplicationContext?) :
         SQLDatabase(DriverProvider(reactContext!!.applicationContext))
     }
 
-        override fun getGreeting(name: String): String {
-            return String.format("Hello, %s!", name)
-        }
+    override fun getGreeting(name: String): String {
+        return String.format("Hello, %s!", name)
+    }
 
-        override fun getTurboArray(values: ReadableArray): WritableArray {
-            val array = values.toArrayList()
-            array.reverse()
-            val reversed = WritableNativeArray()
+    override fun getTurboArray(values: ReadableArray): WritableArray {
+        val array = values.toArrayList()
+        array.reverse()
+        val reversed = WritableNativeArray()
 
-            for (item in array) {
-                if (item !is String) {
-                    continue
-                }
-
-                reversed.pushString(item)
+        for (item in array) {
+            if (item !is String) {
+                continue
             }
-            return reversed
+
+            reversed.pushString(item)
         }
+        return reversed
+    }
 
-        override fun getTurboObject(options: ReadableMap): WritableMap {
-            val obj = WritableNativeMap()
-            obj.putString("helloString", "Hello, World!")
-            obj.putInt("magicNumber", 42)
-            obj.putString("response", "res")
-            return obj
-        }
+    override fun getTurboObject(options: ReadableMap): WritableMap {
+        val obj = WritableNativeMap()
+        obj.putString("helloString", "Hello, World!")
+        obj.putInt("magicNumber", 42)
+        obj.putString("response", "res")
+        return obj
+    }
 
-        override fun getTurboObjectGeneric(options: ReadableMap): WritableMap {
-            val obj = WritableNativeMap()
-            val input = options.getInt("magicNumber")
+    override fun getTurboObjectGeneric(options: ReadableMap): WritableMap {
+        val obj = WritableNativeMap()
+        val input = options.getInt("magicNumber")
 
-            obj.putInt("magicNumber", input * 6)
-            return obj
-        }
+        obj.putInt("magicNumber", input * 6)
+        return obj
+    }
 
-        override fun getTurboPromise(magicNumber: Double, promise: Promise) {
-            when (magicNumber) {
-                42.0 -> {
-                    promise.resolve(true)
-                }
-                7.0 -> {
-                    promise.reject("1", "You stepped on a mine")
-                }
-                else -> {
-                    promise.resolve(false)
-                }
+    override fun getTurboPromise(magicNumber: Double, promise: Promise) {
+        when (magicNumber) {
+            42.0 -> {
+                promise.resolve(true)
             }
-        }
-
-        override fun getSQLRecord(promise: Promise) {
-            GlobalScope.launch(Dispatchers.IO) {
-                val result = WritableNativeArray()
-                getItems(database)
-                    .forEach { result.pushString(it) }
-
-                promise.resolve(result)
+            7.0 -> {
+                promise.reject("1", "You stepped on a mine")
+            }
+            else -> {
+                promise.resolve(false)
             }
         }
+    }
 
-        override fun getBatteryLevel(): Double {
-            return batteryManager?.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY)?.toDouble()
-                ?: .0
+    override fun getSQLRecord(promise: Promise) {
+        GlobalScope.launch(Dispatchers.IO) {
+            val result = WritableNativeArray()
+            getItems(database)
+                .forEach { result.pushString(it) }
+
+            promise.resolve(result)
         }
+    }
 
-        override fun turboMultiply(num1: Double, num2: Double): Double {
-            return nativeMultiply(num1, num2)
-        }
+    override fun getBatteryLevel(): Double {
+        return batteryManager?.getIntProperty(BatteryManager.BATTERY_PROPERTY_CAPACITY)?.toDouble()
+            ?: .0
+    }
 
-        override fun getName(): String {
-            return NAME
-        }
+    override fun turboMultiply(num1: Double, num2: Double): Double {
+        return nativeMultiply(num1, num2)
+    }
 
-        private external fun nativeMultiply(num1: Double, num2: Double): Double
+    override fun getName(): String {
+        return NAME
+    }
 
-        companion object {
+    private external fun nativeMultiply(num1: Double, num2: Double): Double
+
+    companion object {
         const val NAME = "TurboStarter"
 
         init {

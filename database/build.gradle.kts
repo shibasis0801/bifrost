@@ -43,7 +43,7 @@ kotlin {
         summary = "Some description for the database Module"
         homepage = "Link to the database Module homepage"
         ios.deploymentTarget = "14.1"
-        podfile = project.file("../iosApp/Podfile")
+        podfile = project.file("../overlord-lab/iosApp/Podfile")
         framework {
             baseName = "database"
         }
