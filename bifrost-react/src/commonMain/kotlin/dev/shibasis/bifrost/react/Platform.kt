@@ -9,8 +9,3 @@ WriteableNativeArray / NSArray
 Promise / RCTPromiseBlock / JSPromise
 
 */
-
-
-expect interface Platform {
-
-}
