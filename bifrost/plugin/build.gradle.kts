@@ -1,6 +1,7 @@
 plugins {
     id("java-gradle-plugin")
     `kotlin-dsl`
+    id("maven-publish")
     kotlin("jvm") version "1.7.10"
 }
 

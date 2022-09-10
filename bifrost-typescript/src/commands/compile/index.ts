@@ -2,6 +2,7 @@ import {Command} from '@oclif/core'
 import * as tsc from 'typescript'
 import * as path from "path";
 import {readFileSync} from "fs";
+import {CPPGenerator, Param} from "../../compiler/InputTypes";
 
 export default class Compile extends Command {
     static description = 'Generate Kotlin Interfaces from TypeScript Interfaces'
@@ -32,11 +33,18 @@ export default class Compile extends Command {
                         tsc.forEachChild(node, (node) => {
                             this.log(node.kind.toString(), node.getText())
                         })
-
                     }
                 })
             }
         })
-
+        const cppGenerator = new CPPGenerator()
+        const cpp = cppGenerator.toString({
+            name: "helloWorld",
+            params: [
+                Param("age", "number")
+            ],
+            returnType: "number"
+        })
+        console.log(cpp);
     }
 }
