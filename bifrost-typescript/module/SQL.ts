@@ -1,6 +1,6 @@
 export interface SQL {
-    rawQuery: (string) => string[],
+    rawQuery(query: string): string,
     cursor: {
-        next: () => string
+        next(): string
     }
 }

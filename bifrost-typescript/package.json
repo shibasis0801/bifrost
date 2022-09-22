@@ -29,6 +29,7 @@
     "@oclif/core": "^1.13.10",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.0.1",
+    "ts-morph": "^16.0.0",
     "typescript": "^4.4.3"
   },
   "devDependencies": {
@@ -57,7 +58,6 @@
       }
     }
   },
-
   "engines": {
     "node": ">=12.0.0"
   },

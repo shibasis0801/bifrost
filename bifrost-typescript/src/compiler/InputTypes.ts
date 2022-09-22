@@ -1,6 +1,12 @@
+import { Project } from 'ts-morph';
+
 type TypeTargets = Partial<{ cpp: string, objc: string, kotlin: string }>
 type TypeMap = { [key: string]: TypeTargets }
 
+/*
+All JSI types are primitives
+Also define Arrays and Objects of these primitives
+ */
 const types: TypeMap = {
     "number": { // support integer vs float later
         cpp: "double",
@@ -114,3 +120,27 @@ const cpp = cppGenerator.generateFunction({
     returnType: "undefined"
 })
 console.log(cpp);
+
+
+const project = new Project();
+project.addSourceFileAtPath("../../module/SQL.ts");
+project.getSourceFiles()
+    .forEach(sourceFile => {
+        const fns: Function[] = [];
+        sourceFile.getInterfaces()
+            .forEach(contract => {
+                contract?.getStructure()?.methods?.forEach(method => {
+                    console.log(method)
+                    fns.push({
+                        name: method.name,
+                        returnType: method.returnType as any as string,
+                        params: method.parameters?.map(param => ({
+                            name: param.name,
+                            type: param.type as any as string,
+                        })) || []
+                    })
+                })
+            })
+        fns.map(fn => cppGenerator.generateFunction(fn))
+            .forEach(fn => console.log(fn))
+    })
